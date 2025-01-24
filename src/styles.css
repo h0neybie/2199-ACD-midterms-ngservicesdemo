@@ -1,0 +1,28 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #222;
+    background: radial-gradient(circle, rgb(224, 216, 181) 0%, rgb(214, 176, 188) 21%, rgb(173, 108, 146) 100%);
+    background-size: 200% 200%;
+      animation: gradientMotion 10s linear infinite;
+    }
+    h2{
+      color: rgb(38, 40, 41);
+      font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+
+    /* @keyframes gradientMotion {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    } */

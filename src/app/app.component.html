@@ -1,0 +1,54 @@
+<br>
+<body> 
+<div class="container"> 
+
+<h2>Employee List</h2>
+<br>
+<table class="table text-light table-primary">
+  <thead> 
+  <tr>
+    <th style="background-color: rgb(203, 168, 197) !important;" >ID</th>
+    <th style="background-color: rgb(203, 168, 197) !important;"> FIRST NAME</th>
+    <th style="background-color: rgb(203, 168, 197) !important;">LAST NAME</th>
+    <th style="background-color: rgb(203, 168, 197) !important;">EMAIL</th>
+  </tr>
+
+    <tr *ngFor="let employee of employeeservice">
+      <td style="background-color: rgb(218, 197, 215) !important;">{{employee.id}}</td>
+      <td style="background-color: rgb(218, 197, 215) !important;">{{employee.firstname}}</td>
+      <td style="background-color: rgb(218, 197, 215) !important;">{{employee.lastname}}</td>
+      <td style="background-color: rgb(218, 197, 215) !important;">{{employee.email}}</td>
+    </tr>
+  </thead>
+
+</table>
+</div>
+<br>
+<div class="container"> 
+
+<h2>Product List</h2>
+<br>
+
+<table class="table table-striped  table-primary">
+  <thead> 
+  <tr>
+    <th style="background-color: rgb(203, 168, 197) !important;">Product ID</th>
+    <th style="background-color: rgb(203, 168, 197) !important;">Product Name</th>
+    <th style="background-color: rgb(203, 168, 197) !important;">Description</th>
+    <th style="background-color: rgb(203, 168, 197) !important;">Price</th>
+  </tr>
+
+    <tr *ngFor="let Product of productsservice">
+      <td style="background-color: rgb(218, 197, 215) !important;">{{Product.prodid}}</td>
+      <td style="background-color: rgb(218, 197, 215) !important;">{{Product.prodN}}</td>
+      <td style="background-color: rgb(218, 197, 215) !important;">{{Product.desc}}</td>
+      <td style="background-color: rgb(218, 197, 215) !important;">{{Product.price}}</td>
+    </tr>
+  </thead>
+
+</table>
+
+
+
+
+<router-outlet />
